@@ -1,0 +1,37 @@
+/**
+ * スマフォ向けの記述
+ */
+@media screen and (max-width: 375px) { 
+
+    .hero-text-box {
+	width: 100%;
+	padding: 2%
+    }
+    
+}
+
+/**
+ * タブレット・スマフォ向けの記述
+ */
+@media screen and (max-width: 768px) {
+
+    .hero-text-box {
+	width: 100%;
+	padding: 2%
+    }
+
+    h1 {
+	font-size: 200%;
+    }
+    
+}
+
+/**
+ * PC向けの記述
+ */
+@media screen and (max-width: 1140px) {
+    .hero-text-box {
+	width: 100%;
+	padding: 2%
+    }
+}
