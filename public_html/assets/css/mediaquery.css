@@ -35,3 +35,16 @@
 	padding: 2%
     }
 }
+
+/**
+ * ヒーロー内リンク（スマフォ向け）
+ */
+@media screen and (max-width: 768px) {
+
+    .btn-hero:link,
+    .btn-hero:visited {
+	padding: 10px 24px;
+	font-size: 80%;
+    }
+
+}

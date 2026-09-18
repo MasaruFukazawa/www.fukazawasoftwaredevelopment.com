@@ -68,3 +68,33 @@ h1 {
     word-spacing: 4px;
     letter-spacing: 1px;
 }
+
+/**
+ * Hero link part
+ */
+.hero-links {
+    margin-top: 30px;
+}
+
+.btn-hero:link,
+.btn-hero:visited {
+    display: inline-block;
+    padding: 12px 32px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 90%;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    -webkit-transition: background-color 0.2s, color 0.2s;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-hero:hover,
+.btn-hero:active,
+.btn-hero:focus {
+    background-color: #fff;
+    color: #000;
+}
