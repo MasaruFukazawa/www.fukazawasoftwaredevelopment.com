@@ -1,0 +1,20 @@
+{
+  "name": "ll",
+  "version": "1.0.0",
+  "description": "深澤ソフトウェア開発 WEBサイト",
+  "main": "index.js",
+  "devDependencies": {
+    "astro": "^2.2.1",
+    "pug": "^3.0.2",
+    "sass": "^1.61.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "dev": "astro dev --host 0.0.0.0",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "author": "",
+  "license": "ISC"
+}
