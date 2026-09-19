@@ -36,18 +36,25 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 100vh;
+    /* スマフォのアドレスバーの出し入れでヒーローが切れないように、
+       動的ビューポート（svh）に対応したブラウザではそちらを使う */
+    min-height: 100vh;
+    min-height: 100svh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 
 .hero-text-box {
-    position: absolute;
     width: 1140px;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    max-width: 100%;
 }
 
 /**
@@ -76,25 +83,35 @@ h1 {
     margin-top: 30px;
 }
 
-.btn-hero:link,
-.btn-hero:visited {
+.btn-hero {
     display: inline-block;
     padding: 12px 32px;
     border: 1px solid #fff;
     border-radius: 4px;
+    background-color: transparent;
     color: #fff;
     font-size: 90%;
     letter-spacing: 1px;
     text-decoration: none;
     margin-right: 15px;
     margin-bottom: 15px;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
     -webkit-transition: background-color 0.2s, color 0.2s;
     transition: background-color 0.2s, color 0.2s;
 }
 
-.btn-hero:hover,
+/* タップ後にホバー状態が残らないよう、ホバー可能な環境だけに限定する */
+@media (hover: hover) {
+
+    .btn-hero:hover {
+	background-color: #fff;
+	color: #000;
+    }
+
+}
+
 .btn-hero:active,
-.btn-hero:focus {
+.btn-hero:focus-visible {
     background-color: #fff;
     color: #000;
 }

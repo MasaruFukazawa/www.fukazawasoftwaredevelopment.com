@@ -23,6 +23,12 @@
     h1 {
 	font-size: 200%;
     }
+
+    /* iOS Safari は background-attachment: fixed を解釈できず
+       背景が拡大表示されてしまうため、スマフォでは scroll にする */
+    header {
+	background-attachment: scroll;
+    }
     
 }
 
@@ -41,8 +47,7 @@
  */
 @media screen and (max-width: 768px) {
 
-    .btn-hero:link,
-    .btn-hero:visited {
+    .btn-hero {
 	padding: 10px 24px;
 	font-size: 80%;
     }
