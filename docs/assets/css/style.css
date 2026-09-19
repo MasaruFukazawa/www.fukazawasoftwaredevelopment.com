@@ -110,7 +110,13 @@ h1 {
 
 }
 
-.btn-hero:active,
+.btn-hero:active {
+    background-color: #fff;
+    color: #000;
+}
+
+/* :focus-visible 非対応ブラウザ（Safari 15.3 以前など）では
+   セレクタリスト全体が無効になるため、単独のルールに分ける */
 .btn-hero:focus-visible {
     background-color: #fff;
     color: #000;
