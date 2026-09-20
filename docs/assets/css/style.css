@@ -36,18 +36,28 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 100vh;
+    /* height: 100vh だと、横向きなどヒーローが画面より高くなる場合に
+       上部がはみ出して読めなくなる。min-height にして中身に合わせて伸ばす。
+       svh 対応ブラウザでは、アドレスバー表示時の高さを基準にする */
+    min-height: 100vh;
+    min-height: 100svh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 
+/* header 側の flex で中央寄せするため、絶対配置はやめる。
+   絶対配置のままだと、画面外にはみ出した部分にスクロールで到達できない */
 .hero-text-box {
-    position: absolute;
     width: 1140px;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    max-width: 100%;
 }
 
 /**
