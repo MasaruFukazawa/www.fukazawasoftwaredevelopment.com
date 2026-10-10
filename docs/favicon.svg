@@ -1,0 +1,14 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="FKZW">
+<rect width="48" height="48" fill="#D9421C"/>
+<g clip-path="url(#c0)"><path d="M7.84 22.5V7.84H22.5M7.84 15.06H20.38" stroke="#FBFBF9" stroke-width="4.6"/></g>
+<g clip-path="url(#c1)"><path d="M27.84 5.5V22.5M43.56 4.44L29.75 14.64M33.79 12.72L43.56 23.56" stroke="#FBFBF9" stroke-width="4.6"/></g>
+<g clip-path="url(#c2)"><path d="M5.5 25.5H22.5V30.18L13.04 37.82H22.5V42.5H5.5V37.82L14.96 30.18H5.5V25.5Z" fill="#FBFBF9"/></g>
+<g clip-path="url(#c3)"><path d="M25.5 25.5H29.4L30.6 32.55L31.8 25.5H36.2L37.4 32.55L38.6 25.5H42.5L39.61 42.5H35.19L34 35.5L32.81 42.5H28.39L25.5 25.5Z" fill="#FBFBF9"/></g>
+<rect x="2.75" y="2.75" width="42.5" height="42.5" stroke="#FBFBF9" stroke-width="1.5"/>
+<defs>
+<clipPath id="c0"><rect width="17" height="17" transform="translate(5.5 5.5)"/></clipPath>
+<clipPath id="c1"><rect width="17" height="17" transform="translate(25.5 5.5)"/></clipPath>
+<clipPath id="c2"><rect width="17" height="17" transform="translate(5.5 25.5)"/></clipPath>
+<clipPath id="c3"><rect width="17" height="17" transform="translate(25.5 25.5)"/></clipPath>
+</defs>
+</svg>

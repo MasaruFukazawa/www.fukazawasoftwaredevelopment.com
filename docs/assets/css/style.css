@@ -108,3 +108,13 @@ h1 {
     background-color: #fff;
     color: #000;
 }
+
+/**
+ * Logo
+ */
+.hero-logo {
+    display: block;
+    width: 96px;
+    height: 96px;
+    margin-bottom: 24px;
+}
