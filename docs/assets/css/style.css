@@ -31,6 +31,7 @@ section {
  * Header Part
  */
 header {
+    position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/kv.jpeg");
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../img/kv.jpeg");
     background-size: cover;
@@ -113,8 +114,9 @@ h1 {
  * Logo
  */
 .hero-logo {
-    display: block;
-    width: 96px;
-    height: 96px;
-    margin-bottom: 24px;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 64px;
+    height: 64px;
 }
